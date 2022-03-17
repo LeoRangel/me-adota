@@ -71,6 +71,5 @@ body {
   background-color: var(--gray-5);
   position: relative;
   overflow-x: hidden;
-  transition: var(--bg-transition);
 }
 `;
