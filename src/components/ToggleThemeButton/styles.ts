@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 export const ToggleThemeButton = styled.button`
   cursor: pointer;
-  width: 3.5rem;
+  width: 2.25rem;
   border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 20px;
   background: var(--gray-4);
@@ -14,8 +14,8 @@ export const ToggleThemeButton = styled.button`
 
   span {
     position: relative;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 0.75rem;
+    height: 0.75rem;
     background-color: #fff;
     border-radius: 50%;
     transition: all linear 0.3s;
@@ -30,7 +30,7 @@ export const ToggleThemeButton = styled.button`
       background-size: 200% auto;
 
       span {
-        left: calc(100% - 1.5rem);
+        left: calc(100% - 0.75rem);
       }
 
       &:not(:disabled):hover {

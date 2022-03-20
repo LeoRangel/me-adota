@@ -6,5 +6,5 @@ export const Wrapper = styled.div`
   margin: auto;
   display: flex;
   flex-direction: column;
-  padding: var(--pd-container);
+  padding: 0 var(--spacing-5);
 `;

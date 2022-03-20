@@ -1,6 +1,6 @@
-# Me Adota
+# :paw_prints: Me Adota
 
-:paw_prints: Pet adoption website design
+Pet adoption website design
 
 ## :hammer_and_wrench: Development
 
