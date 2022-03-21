@@ -8,7 +8,7 @@ type ToggleThemeButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 
 export function ToggleThemeButton({ theme, ...props }: ToggleThemeButtonProps) {
   return (
-    <S.ToggleThemeButton theme={theme} {...props}>
+    <S.ToggleThemeButton title="Alternar tema" theme={theme} {...props}>
       <span />
     </S.ToggleThemeButton>
   );

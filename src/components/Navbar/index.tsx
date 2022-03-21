@@ -40,9 +40,8 @@ export function Navbar({ theme, toggleTheme }: NavbarProps) {
 
           <ToggleThemeButton theme={theme} onClick={toggleTheme} />
 
-          <S.OpenNavbarButton title="Open sidebar" className="display-when-lg">
+          <S.OpenNavbarButton title="Abrir menu lateral" className="display-when-lg">
             {OpenMenu()}
-            <span className="visually-hidden">Open sidebar</span>
           </S.OpenNavbarButton>
 
           <S.LoginButtons className="hidden-when-md">

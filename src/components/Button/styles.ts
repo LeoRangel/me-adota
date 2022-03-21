@@ -10,6 +10,7 @@ export const Button = styled.button<{ isOutlined: boolean; isWhite: boolean }>`
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  font-size: 1rem;
 
   ${({ isOutlined, isWhite }) => {
     if (isOutlined) {

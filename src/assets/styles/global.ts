@@ -25,6 +25,7 @@ export default createGlobalStyle`
   --spacing-6: 2rem; // 32px
   --spacing-7: 3rem; // 48px
   --spacing-8: 3.75rem; // 60px
+  --spacing-9: 4rem; // 64px
 
   // Radius
   --border-radius-1: .25rem;
@@ -92,7 +93,7 @@ p, span, small {
 
 // Default Classes
 
-.visually-hidden{
+.visually-hidden {
   // This class hides an element in all devices except for the Screen Readers
   position: absolute!important;
   width: 1px!important;

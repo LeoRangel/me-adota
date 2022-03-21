@@ -1,7 +1,7 @@
-import { Wrapper } from '..';
 import { Theme } from '../../types';
-import { ToggleThemeButton } from '../ToggleThemeButton';
+import { Navbar, Wrapper } from '..';
 import * as S from './styles';
+import { PetSearchForm } from '../PetSearchForm';
 
 type PageHeaderProps = {
   theme: Theme;
@@ -11,12 +11,21 @@ type PageHeaderProps = {
 export function PageHeader({ theme, toggleTheme }: PageHeaderProps) {
   return (
     <S.PageHeader>
-      <S.Navbar>
+      <Navbar theme={theme} toggleTheme={toggleTheme} />
+
+      <S.Jumbotron>
         <Wrapper>
-          <h1>MeAdota</h1>
-          <ToggleThemeButton theme={theme} onClick={toggleTheme} />
+          <div>
+            <h1>Encontre o seu novo melhor amigo</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elitInter dumsed quam id ullamcorper quis egestas. Arcu
+              tristique aliquam tristique diam.
+            </p>
+            <PetSearchForm />
+            <a href="/">Quer fazer uma busca avançada? Clique aqui</a>
+          </div>
         </Wrapper>
-      </S.Navbar>
+      </S.Jumbotron>
     </S.PageHeader>
   );
 }
