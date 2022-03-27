@@ -16,8 +16,8 @@ export const Button = styled.button<{ isOutlined: boolean; isWhite: boolean }>`
     if (isOutlined) {
       if (isWhite) {
         return `
-          color: var(--gray-6);
-          border: 1px solid var(--gray-6);
+          color: var(--gray-6-const);
+          border: 1px solid var(--gray-6-const);
           background-color: transparent;
         `;
       }
@@ -29,7 +29,7 @@ export const Button = styled.button<{ isOutlined: boolean; isWhite: boolean }>`
     }
     return `
       background-color: var(--primary-color);
-      color: white;
+      color: var(--gray-6-const);
       border: 1px solid var(--primary-color);
     `;
   }};

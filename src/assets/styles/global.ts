@@ -9,12 +9,25 @@ export default createGlobalStyle`
   --primary-color: #F2A007;
   --primary-color-l: #FCE4B6;
   --primary-color-d: #AB7507;
-  --gray-1: #25292D;
-  --gray-2: #40474F;
-  --gray-3: #65707B;
-  --gray-4: #B0B8BF;
-  --gray-5: #F1F2F3;
-  --gray-6: #FFFFFF;
+
+  // Color gray constant
+  --gray-1-const: #25292D;
+  --gray-2-const: #40474F;
+  --gray-3-const: #65707B;
+  --gray-4-const: #B0B8BF;
+  --gray-5-const: #F1F2F3;
+  --gray-6-const: #FFFFFF;
+
+  // Color gray toggle theme
+  --gray-1: var(--gray-1-const);
+  --gray-2: var(--gray-2-const);
+  --gray-3: var(--gray-3-const);
+  --gray-4: var(--gray-4-const);
+  --gray-5: var(--gray-5-const);
+  --gray-6: var(--gray-6-const);
+
+  --bg-black-opacity-50: rgba(0,0,0,0.5);
+
 
   // Spacing -> 1rem = 16px
   --spacing-1: .25rem; // 4px
@@ -42,13 +55,13 @@ export default createGlobalStyle`
 }
 
 [data-theme="dark"] {
-  // Color
-  --gray-1: #F1F2F3;
-  --gray-2: #B0B8BF;
-  --gray-3: #65707B;
-  --gray-4: #40474F;
-  --gray-5: #25292D;
-  --gray-6: #000000;
+  // Toggle theme
+  --gray-1: var(--gray-6-const);
+  --gray-2: var(--gray-5-const);
+  --gray-3: var(--gray-4-const);
+  --gray-4: var(--gray-3-const);
+  --gray-5: var(--gray-2-const);
+  --gray-6: var(--gray-1-const);
 }
 
 * {
@@ -88,7 +101,7 @@ p {
   margin-bottom: var(--spacing-4);
 }
 p, span, small {
-  color: var(--gray-2);
+  color: var(--gray-3);
 }
 
 // Default Classes

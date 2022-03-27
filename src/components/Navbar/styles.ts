@@ -36,7 +36,7 @@ export const MenuOptions = styled.div`
   }
 
   a {
-    color: var(--gray-6);
+    color: var(--gray-6-const);
     text-decoration: none;
   }
 `;
@@ -52,12 +52,8 @@ export const OpenNavbarButton = styled.button`
   z-index: 995;
 
   svg {
-    width: 1.5rem;
-    height: auto;
-
-    path {
-      fill: var(--gray-6);
-    }
+    font-size: 1.5rem;
+    color: var(--gray-6-const);
   }
 `;
 

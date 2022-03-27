@@ -97,7 +97,6 @@ export function Footer() {
           <p>Inscreva-se para receber todas as novidades diretamente no seu e-mail</p>
 
           <NewslaterForm />
-          <hr />
 
           <S.SocialNetworks>
             <li>
@@ -140,7 +139,10 @@ export function Footer() {
             Copyright &copy; 2022 Me Adota | Todos os direitos reservados | <a href="/">Política de privacidade</a>
           </small>
           <small>
-            Designed by <a href="https://leorangel.github.io/">Leandro Rangel</a>
+            Designed by{' '}
+            <a href="https://leorangel.github.io/" target="_blank" rel="noopener noreferrer">
+              Leandro Rangel
+            </a>
           </small>
         </Wrapper>
       </S.Copy>

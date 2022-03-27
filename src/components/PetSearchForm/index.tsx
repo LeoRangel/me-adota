@@ -7,7 +7,7 @@ export function PetSearchForm() {
       <fieldset>
         <legend className="visually-hidden">Search pet form</legend>
 
-        <label htmlFor="local">
+        <label htmlFor="local" className="localLabel">
           <span className="visually-hidden">Localização</span>
           <S.Input type="search" id="local" placeholder="Informe a localização" />
         </label>

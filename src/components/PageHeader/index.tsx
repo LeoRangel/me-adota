@@ -18,8 +18,8 @@ export function PageHeader({ theme, toggleTheme }: PageHeaderProps) {
           <div>
             <h1>Encontre o seu novo melhor amigo</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elitInter dumsed quam id ullamcorper quis egestas. Arcu
-              tristique aliquam tristique diam.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit ipsum, facilisis eu ornare quis,
+              dignissim id sapien.
             </p>
             <PetSearchForm />
             <a href="/">Quer fazer uma busca avançada? Clique aqui</a>
