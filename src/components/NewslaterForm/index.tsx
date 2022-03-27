@@ -1,5 +1,6 @@
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '..';
-import { ArrowRightIcon } from '../../assets/icons';
 import * as S from './styles';
 
 export function NewslaterForm() {
@@ -14,7 +15,7 @@ export function NewslaterForm() {
         </label>
 
         <Button type="submit" isOutlined={false} isWhite={false}>
-          {ArrowRightIcon()}
+          <FontAwesomeIcon icon={solid('arrow-right')} />
         </Button>
       </fieldset>
     </S.NewslaterForm>

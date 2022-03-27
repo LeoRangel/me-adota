@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { Wrapper, Button, ToggleThemeButton } from '..';
 import { Theme } from '../../types';
 import * as S from './styles';
 import logoImg from '../../assets/images/logo.png';
-import { OpenMenu } from '../../assets/icons';
 
 type NavbarProps = {
   theme: Theme;
@@ -41,7 +42,7 @@ export function Navbar({ theme, toggleTheme }: NavbarProps) {
           <ToggleThemeButton theme={theme} onClick={toggleTheme} />
 
           <S.OpenNavbarButton title="Abrir menu lateral" className="display-when-lg">
-            {OpenMenu()}
+            <FontAwesomeIcon icon={solid('bars')} />
           </S.OpenNavbarButton>
 
           <S.LoginButtons className="hidden-when-md">

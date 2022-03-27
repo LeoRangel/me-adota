@@ -1,16 +1,9 @@
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'; // <-- import styles to be used
 import * as S from './styles';
 import logoImg from '../../assets/images/logo.png';
 import { Wrapper, NewslaterForm } from '..';
-import {
-  FacebookIcon,
-  InstagramIcon,
-  LinkedinIcon,
-  LocalIcon,
-  MailIcon,
-  PhoneIcon,
-  TwitterIcon,
-} from '../../assets/icons';
 
 export function Footer() {
   return (
@@ -22,26 +15,32 @@ export function Footer() {
           </h2>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elitInter dumsed quam id ullamcorper quis egestas. Arcu
-            tristique aliquam tristique diam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit ipsum, facilisis eu ornare quis, dignissim
+            id sapien.
           </p>
 
           <S.Address>
             <ul>
               <li>
-                <span>{PhoneIcon()}</span>
+                <span>
+                  <FontAwesomeIcon icon={solid('phone')} />
+                </span>
                 <a href="tel:+55###########" title="Phone" target="_blank" rel="noopener noreferrer">
                   +55 (##) # ####-####
                 </a>
               </li>
               <li>
-                <span>{MailIcon()}</span>
+                <span>
+                  <FontAwesomeIcon icon={solid('envelope')} />
+                </span>
                 <a href="mailto:#######@#####.com" title="E-mail" target="_blank" rel="noopener noreferrer">
                   contato@meadota.com
                 </a>
               </li>
               <li>
-                <span>{LocalIcon()}</span>
+                <span>
+                  <FontAwesomeIcon icon={solid('location-dot')} />
+                </span>
                 <a href="/" title="Local" target="_blank" rel="noopener noreferrer">
                   Rua X, Cidade Y, Estado Z
                 </a>
@@ -53,9 +52,6 @@ export function Footer() {
         <S.FooterColumn>
           <h2>Menu</h2>
           <ul>
-            <li>
-              <Link to="/">Início</Link>
-            </li>
             <li>
               <Link to="/Adotar">Adotar</Link>
             </li>
@@ -92,9 +88,6 @@ export function Footer() {
             <li>
               <Link to="/">Lorem ipsum</Link>
             </li>
-            <li>
-              <Link to="/">Lorem ipsum</Link>
-            </li>
           </ul>
         </S.FooterColumn>
 
@@ -109,7 +102,7 @@ export function Footer() {
           <S.SocialNetworks>
             <li>
               <S.SocialLink href="https://www.facebook.com/" title="Facebook" target="_blank" rel="noopener noreferrer">
-                {FacebookIcon()}
+                <FontAwesomeIcon icon={brands('facebook-f')} />
               </S.SocialLink>
             </li>
             <li>
@@ -119,12 +112,12 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {InstagramIcon()}
+                <FontAwesomeIcon icon={brands('instagram')} />
               </S.SocialLink>
             </li>
             <li>
               <S.SocialLink href="https://twitter.com/" title="Twitter" target="_blank" rel="noopener noreferrer">
-                {TwitterIcon()}
+                <FontAwesomeIcon icon={brands('twitter')} />
               </S.SocialLink>
             </li>
             <li>
@@ -134,12 +127,13 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {LinkedinIcon()}
+                <FontAwesomeIcon icon={brands('linkedin-in')} />
               </S.SocialLink>
             </li>
           </S.SocialNetworks>
         </S.FooterColumn>
       </Wrapper>
+
       <S.Copy>
         <Wrapper>
           <small>
