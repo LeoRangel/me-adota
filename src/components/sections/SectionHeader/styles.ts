@@ -19,6 +19,7 @@ export const Header = styled.header<{ background: boolean }>`
 
     p {
       margin-bottom: 0;
+      color: var(--gray-2);
     }
 
     a {

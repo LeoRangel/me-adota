@@ -6,5 +6,7 @@ export * from './ToggleThemeButton';
 export * from './PetSearchForm';
 export * from './NewslaterForm';
 export * from './Footer';
+export * from './PetCard';
 export * from './sections/SectionHeader';
 export * from './sections/SectionBody';
+export * from './sections/PetsAvailable';
