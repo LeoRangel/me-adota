@@ -11,6 +11,8 @@ The application was developed using the following tools and technologies:
 - HTML
 - CSS
 - Styled Components
+- React Router Dom
+- Font Awesome Icons
 
 ## :arrow_forward: Install and run the project
 
