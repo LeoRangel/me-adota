@@ -11,7 +11,7 @@ export function Support() {
         id sapien."
         isTextCenter={false}
         hasBG={false}
-        buttonText="Ver todos"
+        buttonText="Ver todas"
         buttonLink="/"
       />
 
