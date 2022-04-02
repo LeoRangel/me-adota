@@ -2,16 +2,17 @@ import styled from 'styled-components';
 
 export const PetCard = styled.div`
   background-color: var(--gray-6);
-  border-radius: var(--border-radius-1);
+  border-radius: var(--border-radius-2);
   box-shadow: var(--shadow-2);
   overflow: hidden;
   position: relative;
+  border: 1px solid var(--gray-5);
 `;
 
 export const CardHeader = styled.div`
   width: 100%;
   height: 276px;
-  border-radius: var(--border-radius-1) var(--border-radius-1) 0 0;
+  border-radius: var(--border-radius-2) var(--border-radius-2) 0 0;
 
   img {
     width: 100%;
@@ -29,7 +30,7 @@ export const CardBody = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  border-radius: 0 0 var(--border-radius-1) var(--border-radius-1);
+  border-radius: 0 0 var(--border-radius-2) var(--border-radius-2);
   position: relative;
 
   a {

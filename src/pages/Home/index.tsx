@@ -1,4 +1,4 @@
-import { Footer, PageHeader, PetsAvailable, HowItWorks } from '../../components';
+import { Footer, PageHeader, PetsAvailable, HowItWorks, Support } from '../../components';
 import useApp from '../../hooks/useApp';
 import * as S from './styles';
 
@@ -12,6 +12,7 @@ export function Home() {
       <S.MainContent>
         <PetsAvailable />
         <HowItWorks />
+        <Support />
       </S.MainContent>
 
       <Footer />

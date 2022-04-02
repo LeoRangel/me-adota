@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Header = styled.header<{ hasBG: boolean }>`
   width: 100%;
   padding-top: var(--spacing-8);
-  padding-bottom: calc(var(--spacing-8) + var(--spacing-6));
+  padding-bottom: calc(var(--spacing-8) + var(--spacing-7));
 
   ${({ hasBG }) => {
     if (hasBG) {
@@ -52,6 +52,6 @@ export const Content = styled.header<{ isTextCenter: boolean }>`
   }
 
   & > div {
-    max-width: 450px;
+    max-width: 500px;
   }
 `;
