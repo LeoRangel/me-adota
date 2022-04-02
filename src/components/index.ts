@@ -10,3 +10,4 @@ export * from './PetCard';
 export * from './sections/SectionHeader';
 export * from './sections/SectionBody';
 export * from './sections/PetsAvailable';
+export * from './sections/HowItWorks';
