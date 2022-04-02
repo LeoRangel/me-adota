@@ -80,7 +80,7 @@ body {
   font-size: 16px;
   font-family: var(--primary-font);
   color: var(--gray-1);
-  background-color: var(--gray-5);
+  background-color: var(--gray-6);
   position: relative;
   overflow-x: hidden;
 }

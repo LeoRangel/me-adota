@@ -32,8 +32,9 @@ export const CardBody = styled.div`
   border-radius: 0 0 var(--border-radius-1) var(--border-radius-1);
   position: relative;
 
-  h3 {
+  a {
     color: var(--primary-color);
+    text-decoration: none;
   }
 `;
 

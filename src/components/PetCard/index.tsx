@@ -1,17 +1,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { regular, solid } from '@fortawesome/fontawesome-svg-core/import.macro'; // <-- import styles to be used
+import { regular } from '@fortawesome/fontawesome-svg-core/import.macro'; // <-- import styles to be used
+import { Link } from 'react-router-dom';
 import * as S from './styles';
 
 type PetCardProps = {
+  link: string;
   name: string;
-  gender: string;
+  gender: 'Macho' | 'Fêmea';
   age: number;
   local: string;
   img: string;
   imgAlt: string;
 };
 
-export function PetCard({ name, gender, age, local, img, imgAlt }: PetCardProps) {
+export function PetCard({ link, name, gender, age, local, img, imgAlt }: PetCardProps) {
   return (
     <S.PetCard>
       <S.CardHeader>
@@ -19,9 +21,11 @@ export function PetCard({ name, gender, age, local, img, imgAlt }: PetCardProps)
       </S.CardHeader>
 
       <S.CardBody>
-        <h3>{name}</h3>
+        <h3>
+          <Link to={link}>{name}</Link>
+        </h3>
         <p>
-          {gender} / {age} anos
+          {gender} <span>/</span> {age} ano{age > 2 && 's'}
         </p>
         <small>{local}</small>
 

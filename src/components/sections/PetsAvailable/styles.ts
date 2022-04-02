@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const PetsAvailable = styled.section`
   width: 100%;
-  background-color: var(--gray-6);
   display: flex;
   flex-direction: column;
 `;

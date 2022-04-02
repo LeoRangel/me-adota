@@ -6,23 +6,29 @@ import { Wrapper } from '../..';
 
 type SectionHeaderProps = {
   title: string;
-  subtitle: string;
-  background: boolean;
-  buttonText: string;
-  buttonLink: string;
+  subtitle?: string;
+  isTextCenter: boolean;
+  hasBG: boolean;
+  buttonText?: string;
+  buttonLink?: string;
 };
 
-export function SectionHeader({ title, subtitle, background, buttonText, buttonLink }: SectionHeaderProps) {
+export function SectionHeader({ title, subtitle, isTextCenter, hasBG, buttonText, buttonLink }: SectionHeaderProps) {
   return (
-    <S.Header background={background}>
+    <S.Header hasBG={hasBG}>
       <Wrapper>
-        <div>
-          <h2>{title}</h2>
-          <p>{subtitle}</p>
-        </div>
-        <Link to={buttonLink}>
-          {buttonText} <FontAwesomeIcon icon={solid('arrow-right')} />
-        </Link>
+        <S.Content isTextCenter={isTextCenter}>
+          <div>
+            <h2>{title}</h2>
+            {subtitle && <p>{subtitle}</p>}
+          </div>
+
+          {buttonText && buttonLink && (
+            <Link to={buttonLink ?? '/'}>
+              {buttonText} <FontAwesomeIcon icon={solid('arrow-right')} />
+            </Link>
+          )}
+        </S.Content>
       </Wrapper>
     </S.Header>
   );
