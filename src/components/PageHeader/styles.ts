@@ -35,7 +35,7 @@ export const Jumbotron = styled.div`
   & > div {
     div {
       max-width: 600px;
-      margin-top: var(--spacing-6);
+      margin-top: var(--spacing-7);
       margin-bottom: var(--spacing-9);
       border-radius: var(--border-radius-2);
       padding: var(--spacing-6);

@@ -38,7 +38,7 @@ export default createGlobalStyle`
   --spacing-6: 2rem; // 32px
   --spacing-7: 3rem; // 48px
   --spacing-8: 3.75rem; // 60px
-  --spacing-9: 4rem; // 64px
+  --spacing-9: 5rem; //80px
 
   // Radius
   --border-radius-1: .25rem;

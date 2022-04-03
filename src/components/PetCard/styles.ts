@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const PetCard = styled.div`
   background-color: var(--gray-6);
-  border-radius: var(--border-radius-2);
   box-shadow: var(--shadow-2);
   overflow: hidden;
   position: relative;
-  border: 1px solid var(--gray-5);
+  border: 1.5px solid var(--gray-5);
+  border-radius: var(--border-radius-2);
 `;
 
 export const CardHeader = styled.div`
@@ -26,11 +26,11 @@ export const CardBody = styled.div`
   width: 100%;
   padding: var(--spacing-5);
   padding-top: var(--spacing-4);
+  border-radius: 0 0 var(--border-radius-2) var(--border-radius-2);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  border-radius: 0 0 var(--border-radius-2) var(--border-radius-2);
   position: relative;
 
   a {
@@ -43,13 +43,13 @@ export const LikePet = styled.button`
   width: 35px;
   height: 35px;
   background-color: var(--gray-6);
-  position: absolute;
-  top: var(--spacing-4);
-  right: var(--spacing-4);
   border-radius: 50%;
   border: none;
   cursor: pointer;
   // box-shadow: var(--shadow-2);
+  position: absolute;
+  top: var(--spacing-4);
+  right: var(--spacing-4);
 
   svg {
     font-size: 1.35rem;

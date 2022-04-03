@@ -5,7 +5,8 @@ export const Footer = styled.footer`
   height: fit-content;
   background-color: var(--gray-1-const);
   color: var(--gray-5-const);
-  padding-top: var(--spacing-8);
+  padding-top: var(--spacing-9);
+  border-top: 0.5px solid var(--gray-3);
 
   h2 {
     margin-bottom: var(--spacing-4);
@@ -107,7 +108,7 @@ export const Copy = styled.div`
   color: var(--gray-4-const);
   background-color: var(--bg-black-opacity-50);
   padding: var(--spacing-5) 0 !important;
-  margin-top: var(--spacing-8);
+  margin-top: var(--spacing-9);
 
   small,
   a {

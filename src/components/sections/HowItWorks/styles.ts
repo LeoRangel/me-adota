@@ -4,22 +4,25 @@ export const HowItWorks = styled.section`
   background-color: var(--gray-5);
 `;
 
-export const ItemsList = styled.section`
+export const ItemsList = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: var(--spacing-8);
+  gap: var(--spacing-4);
 `;
 
-export const Item = styled.section`
+export const Item = styled.div`
+  max-width: 240px;
+  padding: var(--spacing-4);
   background-color: var(--gray-5);
+  border: 1.5px solid var(--primary-color);
+  border-radius: var(--border-radius-2);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  max-width: 200px;
 
   h3 {
     font-size: 1.25rem;
@@ -30,7 +33,7 @@ export const Item = styled.section`
   }
 `;
 
-export const Icon = styled.section`
+export const Icon = styled.div`
   width: 75px;
   height: 75px;
   background-color: var(--primary-color-l);
