@@ -1,4 +1,4 @@
-import { Footer, PageHeader, PetsAvailable, HowItWorks, Support, Blog } from '../../components';
+import { Footer, PageHeader, PetsAvailable, HowItWorks, Support, OurWork, Blog } from '../../components';
 import useApp from '../../hooks/useApp';
 import * as S from './styles';
 
@@ -13,6 +13,7 @@ export function Home() {
         <PetsAvailable />
         <HowItWorks />
         <Support />
+        <OurWork />
         <Blog />
       </S.MainContent>
 
