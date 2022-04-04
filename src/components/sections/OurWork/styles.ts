@@ -50,6 +50,7 @@ export const ItemHeader = styled.div`
 
   h3 {
     font-size: 3rem;
+    text-shadow: var(--shadow-1);
     margin: 0;
   }
 `;

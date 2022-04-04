@@ -7,6 +7,11 @@ export const PetCard = styled.div`
   position: relative;
   border: 1.5px solid var(--gray-5);
   border-radius: var(--border-radius-2);
+  transition: all linear 0.2s;
+
+  :hover {
+    transform: translateY(-10px);
+  }
 `;
 
 export const CardHeader = styled.div`

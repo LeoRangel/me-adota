@@ -24,6 +24,11 @@ export const Card = styled.div`
   position: relative;
   height: 250px;
   border-radius: var(--border-radius-2);
+  transition: all linear 0.2s;
+
+  :hover {
+    transform: translateY(-10px);
+  }
 
   img {
     width: 100%;

@@ -4,6 +4,11 @@ export const PostCard = styled.div`
   position: relative;
   height: 350px;
   border-radius: var(--border-radius-2);
+  transition: all linear 0.2s;
+
+  :hover {
+    transform: translateY(-10px);
+  }
 
   img {
     width: 100%;
@@ -52,5 +57,6 @@ export const Category = styled.div`
     font-size: 0.8rem;
     color: var(--gray-6-const);
     text-decoration: none;
+    text-shadow: var(--shadow-1);
   }
 `;

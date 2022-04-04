@@ -7,14 +7,14 @@ export function NewslaterForm() {
   return (
     <S.NewslaterForm action="">
       <fieldset>
-        <legend className="visually-hidden">Search pet form</legend>
+        <legend className="visually-hidden">Formulário de inscrição da newslater</legend>
 
         <label htmlFor="email">
           <span className="visually-hidden">E-mail</span>
           <S.Input type="email" id="email" placeholder="Informe seu e-mail" />
         </label>
 
-        <Button type="submit" isOutlined={false} isWhite={false}>
+        <Button type="submit" title="Inscrever-se na newslater" isOutlined={false} isWhite={false}>
           <FontAwesomeIcon icon={solid('arrow-right')} />
         </Button>
       </fieldset>

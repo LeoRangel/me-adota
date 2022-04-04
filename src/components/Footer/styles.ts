@@ -96,6 +96,7 @@ export const SocialLink = styled.a`
     color: var(--gray-6-const);
     font-size: 1.25rem;
     position: absolute;
+    text-shadow: var(--shadow-1);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

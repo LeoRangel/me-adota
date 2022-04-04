@@ -5,7 +5,7 @@ export function PetSearchForm() {
   return (
     <S.PetSearchForm action="">
       <fieldset>
-        <legend className="visually-hidden">Search pet form</legend>
+        <legend className="visually-hidden">Formulário de pesquisa de pets</legend>
 
         <label htmlFor="local" className="localLabel">
           <span className="visually-hidden">Localização</span>
