@@ -14,7 +14,8 @@ The application was developed using the following tools and technologies:
 - CSS
 - Styled Components
 - React Router Dom
-- Font Awesome Icons
+- Font Awesome - Icons
+- Splide - Carousel
 
 ## :arrow_forward: Install and run the project
 

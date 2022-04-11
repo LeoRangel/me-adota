@@ -151,4 +151,33 @@ span, small {
     display: flex !important;
   }
 }
+
+// Splide - My Styles
+
+.my-slide-btn {
+  background: var(--gray-6);
+  height: 3em;
+  width: 3em;
+  opacity: 1;
+  box-shadow: var(--shadow-2);
+  border: 1px solid var(--gray-5);
+  transition: all linear .1s;
+}
+.my-slide-btn:disabled {
+  opacity: 0;
+}
+
+.my-slide-btn svg {
+  fill: var(--gray-2);
+}
+
+.my-slide-prev-btn {
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.my-slide-next-btn {
+  right: 0;
+  transform: translateX(50%);
+}
 `;
